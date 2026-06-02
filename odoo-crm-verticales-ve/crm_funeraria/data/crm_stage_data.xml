@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="stage_funeraria_contacto" model="crm.stage">
+            <field name="name">Contacto Inicial</field>
+            <field name="sequence">1</field>
+            <field name="is_won" eval="False"/>
+        </record>
+        <record id="stage_funeraria_cotizacion" model="crm.stage">
+            <field name="name">Cotización Enviada</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="stage_funeraria_plan_negociacion" model="crm.stage">
+            <field name="name">Negociación de Plan</field>
+            <field name="sequence">3</field>
+        </record>
+        <record id="stage_funeraria_servicio_activo" model="crm.stage">
+            <field name="name">Servicio en Curso</field>
+            <field name="sequence">4</field>
+        </record>
+        <record id="stage_funeraria_completado" model="crm.stage">
+            <field name="name">Servicio Completado</field>
+            <field name="sequence">5</field>
+            <field name="is_won" eval="True"/>
+        </record>
+    </data>
+</odoo>

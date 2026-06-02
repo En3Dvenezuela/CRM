@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_funeraria_plan_user,Plan Funerario User,model_crm_funeraria_plan,sales_team.group_sale_salesman,1,0,0,0
+access_funeraria_plan_manager,Plan Funerario Manager,model_crm_funeraria_plan,sales_team.group_sale_manager,1,1,1,1
+access_funeraria_cementerio_user,Cementerio User,model_crm_funeraria_cementerio,sales_team.group_sale_salesman,1,0,0,0
+access_funeraria_cementerio_manager,Cementerio Manager,model_crm_funeraria_cementerio,sales_team.group_sale_manager,1,1,1,1

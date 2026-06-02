@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="crm_lead_view_form_autopartes" model="ir.ui.view">
+        <field name="name">crm.lead.form.autopartes</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Autopartes" invisible="not is_autopartes">
+                    <group>
+                        <group string="Cliente y Vehículo">
+                            <field name="is_autopartes"/>
+                            <field name="cliente_tipo_auto"/>
+                            <field name="vehiculo_id"/>
+                            <field name="vehiculo_marca" readonly="1"/>
+                            <field name="vehiculo_modelo" readonly="1"/>
+                            <field name="vehiculo_anio" readonly="1"/>
+                        </group>
+                        <group string="Preferencias">
+                            <field name="origen_repuesto"/>
+                            <field name="requiere_importacion"/>
+                            <field name="tiempo_entrega_dias"/>
+                            <field name="incluye_instalacion"/>
+                            <field name="taller_recomendado"/>
+                            <field name="garantia_meses"/>
+                        </group>
+                    </group>
+                    <field name="pieza_solicitada_ids">
+                        <list editable="bottom">
+                            <field name="pieza_id"/>
+                            <field name="codigo_oem"/>
+                            <field name="descripcion"/>
+                            <field name="cantidad"/>
+                            <field name="precio_usd"/>
+                            <field name="disponible"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+            <xpath expr="//field[@name='priority']" position="before">
+                <field name="is_autopartes"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

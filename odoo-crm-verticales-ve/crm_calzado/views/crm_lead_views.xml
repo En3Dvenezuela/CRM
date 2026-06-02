@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="crm_lead_view_form_calzado" model="ir.ui.view">
+        <field name="name">crm.lead.form.calzado</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Calzado" invisible="not is_calzado">
+                    <group>
+                        <group string="Perfil del Cliente">
+                            <field name="is_calzado"/>
+                            <field name="calzado_genero"/>
+                            <field name="calzado_categoria"/>
+                            <field name="calzado_marca_id"/>
+                            <field name="calzado_modelo_interes_id"
+                                   domain="[('marca_id', '=', calzado_marca_id)]"/>
+                            <field name="rango_precio"/>
+                            <field name="canal_compra"/>
+                        </group>
+                        <group string="Medidas y Pisada">
+                            <field name="largo_pie_cm"/>
+                            <field name="talla_us"/>
+                            <field name="talla_eu"/>
+                            <field name="talla_mx"/>
+                            <field name="ancho_pie"/>
+                            <field name="tipo_pisada"/>
+                            <field name="arco_pie"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Fidelización">
+                            <field name="cliente_fidelidad_nivel"/>
+                            <field name="referido_por"/>
+                        </group>
+                        <group string="Servicios En3D">
+                            <field name="interesa_personalizacion"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//field[@name='priority']" position="before">
+                <field name="is_calzado"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_calzado_marca_user,Marca User,model_calzado_marca,sales_team.group_sale_salesman,1,0,0,0
+access_calzado_marca_mgr,Marca Manager,model_calzado_marca,sales_team.group_sale_manager,1,1,1,1
+access_calzado_modelo_user,Modelo User,model_calzado_modelo,sales_team.group_sale_salesman,1,0,0,0
+access_calzado_modelo_mgr,Modelo Manager,model_calzado_modelo,sales_team.group_sale_manager,1,1,1,1

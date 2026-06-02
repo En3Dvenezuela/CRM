@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="stage_auto_consulta" model="crm.stage">
+            <field name="name">Consulta de Pieza</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="stage_auto_disponibilidad" model="crm.stage">
+            <field name="name">Verificando Disponibilidad</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="stage_auto_cotizacion" model="crm.stage">
+            <field name="name">Cotización Enviada</field>
+            <field name="sequence">3</field>
+        </record>
+        <record id="stage_auto_orden" model="crm.stage">
+            <field name="name">Orden de Compra</field>
+            <field name="sequence">4</field>
+        </record>
+        <record id="stage_auto_entrega" model="crm.stage">
+            <field name="name">Entrega/Instalación</field>
+            <field name="sequence">5</field>
+            <field name="is_won" eval="True"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="marca_nike" model="calzado.marca">
+            <field name="name">Nike</field>
+            <field name="code">NIKE</field>
+            <field name="pais_origen">Estados Unidos</field>
+            <field name="segmento">deportivo</field>
+        </record>
+        <record id="marca_skechers" model="calzado.marca">
+            <field name="name">Skechers</field>
+            <field name="code">SKX</field>
+            <field name="pais_origen">Estados Unidos</field>
+            <field name="segmento">lifestyle</field>
+        </record>
+        <record id="marca_under_armour" model="calzado.marca">
+            <field name="name">Under Armour</field>
+            <field name="code">UA</field>
+            <field name="pais_origen">Estados Unidos</field>
+            <field name="segmento">deportivo</field>
+        </record>
+        <record id="marca_on_running" model="calzado.marca">
+            <field name="name">On Running</field>
+            <field name="code">ON</field>
+            <field name="pais_origen">Suiza</field>
+            <field name="segmento">deportivo</field>
+        </record>
+        <record id="marca_adidas" model="calzado.marca">
+            <field name="name">Adidas</field>
+            <field name="code">ADI</field>
+            <field name="pais_origen">Alemania</field>
+            <field name="segmento">deportivo</field>
+        </record>
+        <record id="marca_puma" model="calzado.marca">
+            <field name="name">Puma</field>
+            <field name="code">PUM</field>
+            <field name="pais_origen">Alemania</field>
+            <field name="segmento">deportivo</field>
+        </record>
+        <record id="marca_new_balance" model="calzado.marca">
+            <field name="name">New Balance</field>
+            <field name="code">NB</field>
+            <field name="pais_origen">Estados Unidos</field>
+            <field name="segmento">deportivo</field>
+        </record>
+    </data>
+</odoo>

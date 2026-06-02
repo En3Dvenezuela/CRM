@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_auto_vehiculo_user,Vehiculo User,model_autopartes_vehiculo,sales_team.group_sale_salesman,1,1,1,0
+access_auto_vehiculo_mgr,Vehiculo Manager,model_autopartes_vehiculo,sales_team.group_sale_manager,1,1,1,1
+access_auto_pieza_user,Pieza User,model_autopartes_pieza,sales_team.group_sale_salesman,1,0,0,0
+access_auto_pieza_mgr,Pieza Manager,model_autopartes_pieza,sales_team.group_sale_manager,1,1,1,1
+access_auto_pieza_sol_user,Pieza Solicitada User,model_autopartes_pieza_solicitada,sales_team.group_sale_salesman,1,1,1,1
+access_auto_pieza_sol_mgr,Pieza Solicitada Manager,model_autopartes_pieza_solicitada,sales_team.group_sale_manager,1,1,1,1

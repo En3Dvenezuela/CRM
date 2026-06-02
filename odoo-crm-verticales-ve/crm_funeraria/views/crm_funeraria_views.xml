@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Planes funerarios -->
+    <record id="view_funeraria_plan_tree" model="ir.ui.view">
+        <field name="name">crm.funeraria.plan.tree</field>
+        <field name="model">crm.funeraria.plan</field>
+        <field name="arch" type="xml">
+            <list string="Planes Funerarios">
+                <field name="sequence" widget="handle"/>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="nivel"/>
+                <field name="precio_usd"/>
+                <field name="cuota_mensual_usd"/>
+                <field name="meses_financiamiento"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_funeraria_plan_form" model="ir.ui.view">
+        <field name="name">crm.funeraria.plan.form</field>
+        <field name="model">crm.funeraria.plan</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="nivel"/>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="precio_usd"/>
+                            <field name="cuota_mensual_usd"/>
+                            <field name="meses_financiamiento"/>
+                            <field name="currency_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <group string="Servicios Incluidos">
+                        <group>
+                            <field name="incluye_traslado"/>
+                            <field name="incluye_ataud"/>
+                            <field name="incluye_velatorio"/>
+                        </group>
+                        <group>
+                            <field name="incluye_carroza"/>
+                            <field name="incluye_flores"/>
+                            <field name="incluye_cremacion"/>
+                        </group>
+                    </group>
+                    <field name="descripcion"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_funeraria_plan" model="ir.actions.act_window">
+        <field name="name">Planes Funerarios</field>
+        <field name="res_model">crm.funeraria.plan</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Cementerios -->
+    <record id="view_funeraria_cementerio_tree" model="ir.ui.view">
+        <field name="name">crm.funeraria.cementerio.tree</field>
+        <field name="model">crm.funeraria.cementerio</field>
+        <field name="arch" type="xml">
+            <list string="Cementerios">
+                <field name="name"/>
+                <field name="tipo"/>
+                <field name="city"/>
+                <field name="state_id"/>
+                <field name="phone"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_funeraria_cementerio" model="ir.actions.act_window">
+        <field name="name">Cementerios</field>
+        <field name="res_model">crm.funeraria.cementerio</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menús -->
+    <menuitem id="menu_funeraria_root"
+              name="Funeraria"
+              parent="crm.crm_menu_root"
+              sequence="20"/>
+    <menuitem id="menu_funeraria_plan"
+              name="Planes Funerarios"
+              parent="menu_funeraria_root"
+              action="action_funeraria_plan"/>
+    <menuitem id="menu_funeraria_cementerio"
+              name="Cementerios"
+              parent="menu_funeraria_root"
+              action="action_funeraria_cementerio"/>
+</odoo>

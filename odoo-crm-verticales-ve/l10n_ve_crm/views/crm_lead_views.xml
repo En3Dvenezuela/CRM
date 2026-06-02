@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="crm_lead_view_form_ve" model="ir.ui.view">
+        <field name="name">crm.lead.form.ve</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='expected_revenue']" position="after">
+                <field name="l10n_ve_amount_usd"/>
+                <field name="l10n_ve_exchange_rate"/>
+            </xpath>
+            <xpath expr="//field[@name='partner_name']" position="after">
+                <field name="l10n_ve_doc_type"/>
+                <field name="l10n_ve_doc_number"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

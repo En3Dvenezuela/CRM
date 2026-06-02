@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="pieza_filtro_aceite" model="autopartes.pieza">
+            <field name="name">Filtro de Aceite Universal</field>
+            <field name="codigo_interno">FILT-OIL-001</field>
+            <field name="categoria">filtros</field>
+            <field name="origen">aftermarket</field>
+            <field name="precio_venta_usd">8.50</field>
+            <field name="garantia_meses">3</field>
+        </record>
+        <record id="pieza_pastilla_freno" model="autopartes.pieza">
+            <field name="name">Pastillas de Freno Delanteras</field>
+            <field name="codigo_interno">FREN-PAST-001</field>
+            <field name="categoria">frenos</field>
+            <field name="origen">aftermarket</field>
+            <field name="precio_venta_usd">45.00</field>
+            <field name="garantia_meses">6</field>
+        </record>
+    </data>
+</odoo>

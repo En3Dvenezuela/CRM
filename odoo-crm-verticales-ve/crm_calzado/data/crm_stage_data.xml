@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="stage_calzado_interes" model="crm.stage">
+            <field name="name">Interés Inicial</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="stage_calzado_prueba" model="crm.stage">
+            <field name="name">Prueba en Tienda</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="stage_calzado_reserva" model="crm.stage">
+            <field name="name">Reserva / Apartado</field>
+            <field name="sequence">3</field>
+        </record>
+        <record id="stage_calzado_venta" model="crm.stage">
+            <field name="name">Venta Confirmada</field>
+            <field name="sequence">4</field>
+            <field name="is_won" eval="True"/>
+        </record>
+    </data>
+</odoo>

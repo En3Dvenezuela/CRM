@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="plan_basico" model="crm.funeraria.plan">
+            <field name="name">Plan Esencial</field>
+            <field name="code">F-BAS</field>
+            <field name="nivel">basico</field>
+            <field name="precio_usd">800</field>
+            <field name="cuota_mensual_usd">35</field>
+            <field name="meses_financiamiento">24</field>
+            <field name="incluye_traslado">True</field>
+            <field name="incluye_ataud">True</field>
+            <field name="incluye_velatorio">False</field>
+            <field name="descripcion"><![CDATA[<p>Plan básico que incluye traslado y ataúd estándar.</p>]]></field>
+        </record>
+        <record id="plan_estandar" model="crm.funeraria.plan">
+            <field name="name">Plan Tradicional</field>
+            <field name="code">F-EST</field>
+            <field name="nivel">estandar</field>
+            <field name="precio_usd">1500</field>
+            <field name="cuota_mensual_usd">50</field>
+            <field name="meses_financiamiento">36</field>
+            <field name="incluye_traslado">True</field>
+            <field name="incluye_ataud">True</field>
+            <field name="incluye_velatorio">True</field>
+            <field name="incluye_carroza">True</field>
+            <field name="incluye_flores">True</field>
+        </record>
+        <record id="plan_premium" model="crm.funeraria.plan">
+            <field name="name">Plan Premium</field>
+            <field name="code">F-PRE</field>
+            <field name="nivel">premium</field>
+            <field name="precio_usd">3000</field>
+            <field name="cuota_mensual_usd">85</field>
+            <field name="meses_financiamiento">48</field>
+            <field name="incluye_traslado">True</field>
+            <field name="incluye_ataud">True</field>
+            <field name="incluye_velatorio">True</field>
+            <field name="incluye_carroza">True</field>
+            <field name="incluye_flores">True</field>
+            <field name="incluye_cremacion">True</field>
+        </record>
+    </data>
+</odoo>
